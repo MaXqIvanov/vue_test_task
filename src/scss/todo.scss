@@ -1,0 +1,227 @@
+.home{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.main_todo{
+    height: 100%;
+    width: 90%;
+    min-height: 85vh;
+}
+.todo_title{
+    font-size: xx-large;
+}
+.todo{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    row-gap: 10px;
+    column-gap: 1%;
+    
+    @media(max-width:630px){
+        grid-template-columns: 49% 49%;
+        column-gap: 2%;
+    }
+}
+.page-item{
+    height: 200px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+ol, ul{
+    padding-left: 0px !important;
+}
+.page-link{
+    height: 100%;
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+.custom_btn_addTask{
+    width: 30%;
+    min-width: 200px;
+}
+.empty{
+    height: 100%;
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_add_task{
+    position: fixed;
+    width: 50%;
+    height: 35%;
+    min-height: 200px;
+    min-width: 200px;
+    max-width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+.form_add_task_wrap{
+    height: 100%;
+    width: 100%;
+    background: rgb(92, 92, 92);
+    position: relative;
+}
+.close_btn_form{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.custom_from_todoList{
+    margin-top: 20px;
+    color: aliceblue;
+    font-size: large;
+}
+.custom_form_btn{
+    margin-top: 20px;
+}
+.change_btn{
+    background-image: url('../images/change.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+// FormChange
+.FormChange{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 200px;
+    width: 50%;
+    min-width: 250px;
+    max-width: 400px;
+    background: rgb(97, 97, 97);
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+.btn_change_task{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.delete_btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-image: url('../images/delete.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+.choise_task{
+    background: rgb(0, 0, 0);
+    width: 50%;
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    left: 50%;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+    border-radius: 25px;
+}
+.task{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+.task_wrap{
+    width: 90%;
+    height: 100%;
+    min-height: 75vh;
+    margin-top: 25px;
+}
+.custom_btn_add_tasks{
+    background: black;
+    color: white;
+    width: 250px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.empty_tasks{
+    height: 100%;
+    width: 100%;
+    min-height: 75vh;
+    font-size: x-large;
+}
+.btn_wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.all_tasks{
+    min-height: 75vh;
+}
+.one_task{
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 3px gray;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    position: relative;
+    font-size: x-large;
+
+    @media(max-width:630px){
+        font-size: medium;
+    }
+}
+.task_id{
+    text-align: start;
+}
+.form-check{
+    text-align: end;
+}
+.delete_task{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-image: url('../images/delete_task.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+.change_task{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 15px;
+    width: 15px;
+    background-image: url('../images/change.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.complete_task{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: red;
+    font-size: small;
+}
