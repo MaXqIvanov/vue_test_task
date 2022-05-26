@@ -61,9 +61,9 @@ export default defineComponent({
   },
   data() {
     return {
-      visibleFild: false,
-      inputValueNameTask: '',
-      visibleFieldFormChange: false,
+      visibleFild: false as boolean,
+      inputValueNameTask: '' as string,
+      visibleFieldFormChange: false as boolean,
     };
   },
   methods: {

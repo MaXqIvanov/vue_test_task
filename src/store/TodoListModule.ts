@@ -5,10 +5,10 @@ const config = {
 };
 export default {
   state: {
-    todoAll: [],
-    inputTask: '',
-    currentTaskId: 0,
-    currentIndex: 0,
+    todoAll: [] as any[],
+    inputTask: '' as string,
+    currentTaskId: 0 as number | undefined,
+    currentIndex: 0 as number | undefined,
   },
   getters: {
   },

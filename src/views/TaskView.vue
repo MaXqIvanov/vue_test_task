@@ -54,9 +54,9 @@ export default defineComponent({
   },
   data() {
     return {
-      visibleTaskForm: false,
-      visibleChangeForm: false,
-      inputValueNameTask: '',
+      visibleTaskForm: false as boolean,
+      visibleChangeForm: false as boolean,
+      inputValueNameTask: '' as string,
     };
   },
   methods: {

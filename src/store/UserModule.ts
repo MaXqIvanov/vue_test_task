@@ -5,9 +5,9 @@ const config = {
 };
 export default {
   state: {
-    user: {},
-    inputPass: '',
-    inputName: '',
+    user: {} as object | [],
+    inputPass: '' as string,
+    inputName: '' as string,
   },
   getters: {
   },

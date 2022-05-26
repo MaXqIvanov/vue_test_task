@@ -5,11 +5,11 @@ const config = {
 };
 export default {
   state: {
-    taskAll: [],
-    currentTaskId: undefined,
-    inputValueTask: '',
-    idOneTask: undefined,
-    indexOneTask: undefined,
+    taskAll: [] as any[],
+    currentTaskId: undefined as number | undefined,
+    inputValueTask: '' as string,
+    idOneTask: undefined as number | undefined,
+    indexOneTask: undefined as number | undefined,
   },
   getters: {
   },
